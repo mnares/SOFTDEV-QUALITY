@@ -1,0 +1,20 @@
+{% set id = field('id') %}
+{% set divider = field('type') %}
+{% set src = field('image') %}
+{% set alt_text = field('alt_text') %}
+
+<div id="{{ id }}" class="qx-element qx-element-divider-separator">
+  {% if divider == 'border' %}
+    <span class="qx-divider-separator"></span>
+  {% else %}
+    {% if src.media %}
+      {% if src.media.type == "svg" %}
+        {{ src.media.svg }}
+      {% else %}
+        {{ image( FILE_MANAGER_ROOT_URL ~ src.media.image, alt_text) }}
+      {% endif %}  
+    {% elseif src.url %}
+      {{ image(src.url, alt_text) }}
+    {% endif %}
+  {% endif %}
+</div>

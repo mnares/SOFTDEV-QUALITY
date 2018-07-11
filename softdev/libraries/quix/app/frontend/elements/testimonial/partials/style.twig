@@ -1,0 +1,50 @@
+{% include 'global.twig' %}
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}"
+          img = id + " img",
+          img_alignment = {{ field("image_alignment").value | json_encode() }},
+          contentSelector = id + " p.qx-testimonial__quote",
+          imgSpacing = id + " .qx-testimonial__media_author",
+          mediaSelector = id + " .qx-element-testimonial__media",
+          imgSelector = id + " .qx-element-testimonial__media img",
+          nameSelector = id + ' .qx-testimonial__name',
+          positionSelector = id + ' .qx-testimonial__position',
+
+
+// Testimonial
+elm.css( contentSelector, 'font-size', '20px');
+elm.css( contentSelector, 'color', {{ field('content_color') | json_encode() }});
+elm.typography(contentSelector, {{ field('content_font') | json_encode() }});
+elm.responsiveCss(contentSelector, {{ field("content_spacing") | json_encode() }}, 'margin-bottom', 'px');
+elm.alignment( id, {{ field('content_alignment') | json_encode() }});
+
+// Media 
+elm.css( imgSelector, 'border-radius', '100%');
+elm.css( imgSelector, 'object-fit', 'cover');
+elm.width( imgSelector, {{ field('width') | json_encode() }}, 'px' ); 
+elm.height( imgSelector, {{ field('width') | json_encode() }}, 'px' ); 
+elm.borderRadius( imgSelector, {{ field('image_border_radius') | json_encode() }} );
+
+// Image spacing 
+if( img_alignment == 'top'){
+  elm.responsiveCss(mediaSelector, {{ field("image_spacing") | json_encode() }}, 'margin-bottom', 'px');
+} else if( img_alignment == 'bottom'){
+  elm.responsiveCss(mediaSelector, {{ field("image_spacing") | json_encode() }}, 'margin-top', 'px');
+} else if( img_alignment == 'right'){
+  elm.responsiveCss(mediaSelector, {{ field("image_spacing") | json_encode() }}, 'margin-left', 'px');
+} else{
+  elm.responsiveCss(mediaSelector, {{ field("image_spacing") | json_encode() }}, 'margin-right', 'px');
+}
+
+// Name
+elm.css( nameSelector, 'margin-bottom', '0px');
+elm.css( nameSelector, 'color', {{ field('name_color') | json_encode() }});
+elm.typography(nameSelector, {{ field('name_font') | json_encode() }});
+elm.responsiveCss(nameSelector, {{ field("name_spacing") | json_encode() }}, 'margin-bottom', 'px');
+
+// Position
+elm.css( positionSelector, 'color', {{ field('position_color') | json_encode() }});
+elm.typography(positionSelector, {{ field('position_font') | json_encode() }});
+
+
+elm.load(id)

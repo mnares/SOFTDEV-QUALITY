@@ -1,0 +1,19 @@
+{% set id = field("id") %}
+{% set src = field('image') %}
+{% set alt_text = field('alt_text') %}
+{% set link = field('link') %}
+{% set class = classNames('qx-element qx-element-image') %}
+
+<div id="{{ id }}" class="{{ class }}">
+
+  {% if src.media %}
+    {% if src.media.type == "svg" %}
+      {{ src.media.svg }}
+    {% else %}
+      {{ image( startsWith(src.media.image, "data:image") ? src.media.image : FILE_MANAGER_ROOT_URL ~ src.media.image, alt_text) | link(link) }}
+    {% endif %}  
+  {% elseif src.url %}
+    {{ image(src.url, alt_text) | link(link) }}
+  {% endif %}
+
+</div>

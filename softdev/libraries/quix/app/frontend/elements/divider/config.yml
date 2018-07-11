@@ -1,0 +1,91 @@
+name: Divider
+slug: divider
+groups: general
+form:
+  general:
+    - name : divider_fields_group
+      label: Divider
+      type: fields-group
+      status: open
+      schema:
+        - name: type
+          type: select
+          value: border
+          options:
+            border: Border
+            image : Image
+        
+        - name : alignment
+          type : choose
+          responsive : true
+          options:
+            left :
+              label: Left
+              icon : qxicon-align-left
+            center :
+              label : Center
+              icon : qxicon-align-center
+            right : 
+              label : Right
+              icon : qxicon-align-right
+    
+    - name : divider_border_fields_group
+      label: Border
+      type: fields-group
+      depends :
+        type : border
+      schema:
+        - name: style
+          type: select
+          value: solid
+          options:
+            solid: Solid
+            double : Double
+            dotted : Dotted
+            dashed : Dashed
+        
+        - name: weight
+          type: slider
+          min: 1
+          max: 10
+          value: 5
+          responsive : false
+        
+        - name  : color
+          type  : color
+        
+        - name : width
+          type : slider
+          max: 100
+          value:
+            desktop: 100
+            tablet: 100
+            mobile: 100
+          suffix : '%'
+        
+        - name : gap
+          type : slider
+          min: 2
+          max: 100
+          value: 
+            desktop: 15
+            tablet: 15
+            mobile: 15
+          suffix : 'px'
+
+    - name : divider_image_fields_group
+      label: Image
+      type: fields-group
+      depends :
+        type : image
+      schema:
+        - name: image
+          type: media
+        
+        - name: alt_text
+          label : Alt Text
+          type: text
+          help : Google focuses on alt text when trying to understand what an image is about. So it's valuable for SEO, in addition to being useful for users.
+          depends:
+            image: '*'
+    

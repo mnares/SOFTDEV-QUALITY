@@ -1,0 +1,47 @@
+name: Text
+slug: text
+groups: general
+form:
+  general:
+    - name : text_fields_group
+      label: Text
+      type: fields-group
+      status: open
+      schema:
+        - name: content
+          type: editor
+          value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+ 
+  styles:
+    - name    : text_fields_group
+      label   : Text Style
+      type    : fields-group
+      status  : open
+      schema  :
+        - name : alignment
+          type : choose
+          responsive : true
+          options:
+            left :
+              label: Left
+              icon : qxicon-align-left
+            center :
+              label : Center
+              icon : qxicon-align-center
+            right : 
+              label : Right
+              icon : qxicon-align-right
+        
+        - name  : text_color
+          label : Text Color
+          type  : color
+
+    - name : typo_fields_group
+      label: Typography
+      type: fields-group
+      schema :
+        - name: font
+          type: typography
+
+      
+    

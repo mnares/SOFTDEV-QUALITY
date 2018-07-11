@@ -1,0 +1,38 @@
+{
+    "desktop" : {
+        "margin" : {
+            "bottom" : "25",
+            "top" : "25"
+        },
+        "nav-typography" : {
+            "color" : "@title",
+            "font-family" : "@default",
+            "font-size" : 18,
+            "font-style" : "normal",
+            "font-weight" : "300",
+            "letter-spacing" : 0,
+            "line-height" : 46,
+            "text-decoration" : "none",
+            "text-align" : "left",
+            "text-transform" : "uppercase"
+        },
+        "nav-hover" : {
+            "color" : "@primary"
+        },
+        "view":{
+            "counter" : true,
+            "sub" : true
+        },
+        "disable" : "0"
+    },
+    "tablet" : {
+        "disable" : "0"
+    },
+    "phone" : {
+        "disable" : "0"
+    },
+    "app" : "",
+    "type" : "categories",
+    "access" : 1,
+    "suffix" : ""
+}

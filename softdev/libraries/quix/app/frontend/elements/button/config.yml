@@ -1,0 +1,130 @@
+name: Button
+slug: button
+groups: general
+form:
+  general:
+    - name : button_fields_group
+      label: Button
+      type: fields-group
+      status: open
+      schema:
+        - name: text
+          type: text
+          value: Click Me
+      
+        - name: type
+          type: select
+          value: primary
+          options:
+            primary: Primary
+            secondary: Secondary
+            success : Success
+            danger : Danger
+            warning : Warning
+            info : Info
+            light : Light
+            dark: Dark
+            link : Link 
+        
+        - name: outline
+          label : Outline Style
+          type: switch
+          help: Outline remove all background images and colors from button.
+        
+        - name: full_width
+          label: Full Width Button
+          type: switch
+          help: Take full width of parent element space.
+        
+        - name : alignment
+          type : choose
+          responsive : true
+          options:
+            left :
+              label: Left
+              icon : qxicon-align-left
+            center :
+              label : Center
+              icon : qxicon-align-center
+            right : 
+              label : Right
+              icon : qxicon-align-right
+    
+    - name : button_link_fields_group
+      label: Link
+      type: fields-group
+      schema:
+        - name: link
+          type: link
+          value:
+            url : '#'
+        
+  styles:
+    - name : button_typo_fields_group
+      label: Typography
+      type: fields-group
+      schema :
+        - name: font
+          type: typography
+
+    - name    : button_bg_fields_group
+      label   : Background
+      type    : fields-group
+      schema  :
+        - name  : btn_background
+          label : Button Background
+          type  : background
+          video : false
+    
+    - name    : button_color_fields_group
+      label   : Text Color
+      type    : fields-group
+      schema  :
+        - name  : text_color
+          label : Text Color
+          type  : color
+        
+        - name  : hover_text_color
+          label : Hover Text Color
+          type  : color
+
+    - name : button_border_fields_group
+      label : Border
+      type: fields-group
+      schema :
+        - name : btn_border_width
+          label : Width
+          type : dimensions
+        
+        - name : btn_border_type
+          label : Border Type
+          type: select
+          value : solid
+          options: 
+            solid : Solid
+            double : Double
+            dotted : Dotted
+            dashed : Dashed
+        
+        - name : btn_border_color
+          label : Border Color
+          type : color 
+        
+        - name : btn_hover_border_color
+          label : Hover Border Color
+          type : color 
+        
+        - name : btn_border_radius
+          label : Border Radius
+          type: dimensions
+    
+    - name : button_spacing_fields_group
+      label: Spacing
+      type: fields-group
+      schema :
+        - name: btn_padding
+          label : Padding
+          type: dimensions
+
+      
+    

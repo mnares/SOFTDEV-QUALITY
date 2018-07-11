@@ -1,0 +1,28 @@
+{% include 'global.twig' %}
+
+var col = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          css = "",
+          backgroundOverlay = ".{{ field('id') }}-background-overlay",
+          elementBuilderSelector = id + " .qx-fb-elements .qx-fb-element+.qx-fb-element",
+          elementSelector = id + " .qx-element+.qx-element",
+          width = {{ field("col_width") | json_encode() }}
+
+  if(width.desktop) {
+    col.desktop(id, "flex: " + width.desktop + "%; max-width: " + width.desktop + "%;");
+    col.tablet(id,  "flex: " + width.tablet + "%; max-width: " + width.tablet + "%;");
+    col.phone(id,  "flex: " + width.phone + "%; max-width: " + width.phone + "%;");
+  }
+
+// background overlay
+col.background (backgroundOverlay, {{ field("background_overlay") | json_encode() }}, id)
+
+col.responsiveCss(elementBuilderSelector, {{ field("element_spacing") | json_encode() }}, 'margin-top', 'px');
+col.responsiveCss(elementSelector, {{ field("element_spacing") | json_encode() }}, 'margin-top', 'px');
+
+col.load(id)
+
+// loading children ( ELEMENTS ) style...
+{% if renderer %}
+  {{ renderer.render( node['children'], null, 'frontend' ) | raw  }}
+{% endif %}

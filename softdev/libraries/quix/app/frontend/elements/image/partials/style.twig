@@ -1,0 +1,37 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          img = id + " img",
+          src = {{ field("image") | json_encode() }} 
+
+// Width > img
+elm.width( img, {{ field('width') | json_encode() }}, '%' ); 
+
+// Opacity > img
+elm.css( img, 'opacity', {{ field('opacity') | json_encode() }} ); 
+
+// Border width > img 
+elm.borderWidth( img, {{ field('img_border_width') | json_encode() }} );
+
+// Border style > img 
+elm.css( img, 'border-style', {{ field('img_border_type') | json_encode() }} );
+
+// Border color > img 
+elm.css( img, 'border-color', {{ field('img_border_color') | json_encode() }} );
+
+// Border radius > img 
+elm.borderRadius( img, {{ field('img_border_radius') | json_encode() }} );
+
+// Alignment
+elm.alignment(id, {{ field('alignment') | json_encode() }});
+
+// svg
+if( src.media ) {
+  if( src.media.type == "svg" ) {
+    elm.desktop( id + " path", "fill:" + src.media.properties.color )
+    elm.desktop( id, "height:" + src.media.properties.size + "px; width:" + src.media.properties.size + "px")
+  }
+}
+
+elm.load(id)

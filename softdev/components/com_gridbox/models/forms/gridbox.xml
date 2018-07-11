@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+            name="editor"
+            type="editor"
+            editor="jce"
+            filter="JComponentHelper::filterText"
+            buttons="false" />
+    </fieldset>
+</form>

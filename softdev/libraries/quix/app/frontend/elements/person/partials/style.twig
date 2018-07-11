@@ -1,0 +1,48 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          img_alignment = {{ field("image_alignment").value | json_encode() }},
+          wrapperSelector = id + " .qx-element-person__wrapper",
+          imageSelector = id + " .qx-element-person__image",
+          flexSelector = id + " .qx-element-person__image, " + id +" .qx-element-person__profile",
+          nameSelector = id + " .qx-element-person__name",
+          positionSelector = id + " .qx-element-person__position",
+          descriptionSelector = id + " .qx-element-person__description",
+          profileSelector = id + " .qx-element-person__profile";
+
+// image Style
+if( img_alignment == 'left'){
+  elm.responsiveCss(imageSelector, {{ field("image_spacing") | json_encode() }}, 'margin-right', 'px');
+  elm.css( imageSelector , 'margin-bottom', '0px' );
+  elm.css( flexSelector , 'flex', '1 0 0' );
+} else if( img_alignment == 'right'){
+  elm.responsiveCss(imageSelector, {{ field("image_spacing") | json_encode() }}, 'margin-left', 'px');
+  elm.css( imageSelector , 'margin-bottom', '0px' );
+  elm.css( flexSelector , 'flex', '1 0 0' );
+} else{
+  elm.responsiveCss(imageSelector, {{ field("image_spacing") | json_encode() }}, 'margin-bottom', 'px');
+}
+elm.borderRadius( imageSelector + ' *', {{ field("img_border_radius") | json_encode() }})
+
+// Name Style
+// -----------------
+elm.responsiveCss( nameSelector + ' *', {{ field("name_spacing") | json_encode() }}, 'margin-bottom', 'px');
+elm.css( nameSelector + ' *', 'color', {{ field('name_color') | json_encode() }});
+elm.typography( nameSelector + ' *', {{ field('name_font') | json_encode() }});
+
+// position Style
+// ------------------
+elm.responsiveCss( positionSelector , {{ field("position_spacing") | json_encode() }}, 'margin-bottom', 'px');
+elm.css( positionSelector, 'color', {{ field('position_color') | json_encode() }});
+elm.typography( positionSelector, {{ field('position_font') | json_encode() }});
+
+// Description Style
+// -------------------
+elm.css( descriptionSelector, 'color', {{ field('description_color') | json_encode() }});
+elm.typography( descriptionSelector, {{ field('description_font') | json_encode() }});
+
+// Content 
+// --------------------
+elm.alignment( wrapperSelector, {{ field('content_alignment') | json_encode() }});
+elm.padding( profileSelector, {{ field("content_padding") | json_encode() }})

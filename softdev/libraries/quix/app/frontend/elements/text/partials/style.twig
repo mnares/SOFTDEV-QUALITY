@@ -1,0 +1,16 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          css = "";
+
+// typography
+elm.typography(id, {{ field('font') | json_encode() }});
+
+// Alignment
+elm.alignment(id, {{ field('alignment') | json_encode() }});
+
+// Text Color
+elm.css( id, 'color', {{ field('text_color') | json_encode() }});
+
+elm.load(id)

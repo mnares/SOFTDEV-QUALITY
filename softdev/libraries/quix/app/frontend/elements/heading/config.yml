@@ -1,0 +1,70 @@
+name: Heading
+slug: heading
+groups: general
+form:
+  general:
+    - name : heading_fields_group
+      label: Title
+      type: fields-group
+      status: open
+      schema:
+        - name: title
+          type: textarea
+          value: Add Your Heading Text Here.
+          help: You can add HTML also.
+      
+        - name: html_tag
+          label: HTML Tag
+          type: select
+          value: h2
+          options:
+            h1: H1
+            h2: H2
+            h3: H3
+            h4: H4
+            h5: H5
+            h6: H6
+            div: div
+            span: span
+            p: p
+        
+        - name : alignment
+          type : choose
+          responsive : true
+          options:
+            left :
+              label: Left
+              icon : qxicon-align-left
+            center :
+              label : Center
+              icon : qxicon-align-center
+            right : 
+              label : Right
+              icon : qxicon-align-right
+  
+    - name : heading_links_fields_group
+      label: Link
+      type: fields-group
+      schema:
+        - name: link
+          label: Link Url
+          type: link
+        
+  styles:
+    - name    : color_fields_group
+      label   : Color
+      type    : fields-group
+      schema  :
+        - name  : text_color
+          label : Text Color
+          type  : color
+
+    - name : heading_typo_fields_group
+      label: Typography
+      type: fields-group
+      schema :
+        - name: font
+          type: typography
+
+      
+    

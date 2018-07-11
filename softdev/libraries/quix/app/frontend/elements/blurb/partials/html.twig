@@ -1,0 +1,43 @@
+{% set id = field('id') %}
+{% set tag = field('html_tag') %}
+{% set link = field('link') %}
+{% set src = field('image') %}
+{% set alt_text = field('alt_text') %}
+{% 
+  set wrapperClasses = classNames('qx-element-blurb__wrapper', 
+  field('content_v_align').value ? field('content_v_align').value : "", 
+  {
+    'qx-d-md-flex qx-flex-md-row' : (field('image_alignment').value == 'left'),
+    'qx-d-md-flex qx-flex-md-row-reverse' : (field('image_alignment').value == 'right'),
+  }) 
+%}
+
+
+<div id="{{ id }}" class="qx-element qx-element-blurb-v2">
+  
+  <div class="{{ wrapperClasses }} ">
+
+    <figure class="qx-element-blurb__media qx-d-inline-block">
+      {% if src.media %}
+        {% if src.media.type == "svg" %}
+          {{ src.media.svg }}
+        {% else %}
+          {{ image( src.media.image, alt_text) | link(link) }}
+        {% endif %}  
+      {% elseif src.url %}
+          {{ image(src.url, alt_text) | link(link) }}
+      {% endif %}
+    </figure>
+
+    <div class="qx-element-blurb__content qx-w-100">
+      <div class="qx-element-blurb__title">
+        {{ field('title') | wrap(tag) | link(link) }}
+      </div>
+      <div class="qx-element-blurb__body">
+        {{ field('content') }}
+      </div>
+    </div>
+
+  </div>
+
+</div>

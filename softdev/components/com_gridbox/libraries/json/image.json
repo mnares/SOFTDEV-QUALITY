@@ -1,0 +1,42 @@
+{
+    "desktop" : {
+        "border" : {
+            "color" : "@border",
+            "radius" : "9",
+            "style" : "solid",
+            "width" : "0"
+        },
+        "margin" : {
+            "bottom" : "25",
+            "top" : "25"
+        },
+        "disable" : "0",
+        "style": {
+            "width" : 650,
+            "align" : "center"
+        },
+        "shadow" : {
+            "value" : "0",
+            "color" : "@shadow"
+        }
+    },
+    "tablet" : {
+        "disable" : "0"
+    },
+    "phone" : {
+        "disable" : "0"
+    },
+    "link" : {
+        "link" : "",
+        "target" : "_self"
+    },
+    "popup": false,
+    "lightbox" : {
+        "color" : "@overlay"
+    },
+    "image" : "",
+    "alt" : "",
+    "type" : "image",
+    "access" : 1,
+    "suffix" : ""
+}

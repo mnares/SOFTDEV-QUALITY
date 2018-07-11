@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<?xml-stylesheet href="/media/plg_jchoptimize/css/pro-jquery.lazyloadxt.fadein.css" type="text/css"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>News</title>
+		<description><![CDATA[]]></description>
+		<link>https://www.joomlapolis.com/news</link>
+		<lastBuildDate>Wed, 11 Jul 2018 06:10:20 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://www.joomlapolis.com/news?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<item>
+			<title>Joomla 3.8.9/3.8.10 Security and Bug Fixes release!</title>
+			<link>https://www.joomlapolis.com/news/18795-joomla-3-8-9-3-8-10-security-and-bug-fixes-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18795-joomla-3-8-9-3-8-10-security-and-bug-fixes-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5737-joomla-3-8-10-release.html" target="_blank" rel="noopener noreferrer"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201807/joomla-3810_640.jpg" alt="" /></a></p>
+<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5737-joomla-3-8-10-release.html" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.10 is here</a> - a quick fix for the <a href="https://www.joomla.org/announcements/release-news/5734-joomla-3-8-9-release.html" target="_blank" rel="noopener noreferrer">Joomla 3.8.9</a> security and bug fixes release!</p>
+<p> </p>
+<p>The Joomla project team has recently released versions 3.8.9 and 3.8.10. <strong>Joomla 3.8.9</strong> is a <strong>security and bug fixes release </strong>and<strong> Joomla 3.8.10 fixes a </strong>Joomla 3.8.9 bug<strong>. </strong></p>
+<p><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> 2.2 (latest build) and all Joomlapolis <a href="https://www.joomlapolis.com/addons">add-ons</a> work just fine with Joomla 3.8.10. You can see everything in action on our <a href="http://demo.cbdemosites.com/" target="_blank" rel="noopener noreferrer">demo site</a>.</p>
+<p>Joomla 3.8.9 addresses 2 low-priority security vulnerabilities and fixes bugs.</p>
+<p>The Joomla 3.8.10 is a highly recommended upgrade for all Joomla 3.x series sites. <strong>As always</strong>, before any Joomla upgrade on your live website, <strong>take a backup</strong> just in case anything goes wrong.</p>
+<p>You can learn more about these security and bug fixes by <a href="https://www.joomla.org/announcements/release-news/5734-joomla-3-8-9-release.html" target="_blank" rel="nofollow noopener noreferrer">reading the Joomla 3.8.9</a>. and the <a href="https://www.joomla.org/announcements/release-news/5737-joomla-3-8-10-release.html" target="_blank" rel="noopener noreferrer">Joomla 3.8.10</a> announcements.</p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Mon, 02 Jul 2018 23:29:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>Community Builder 2.2 Bootstrap 4 Release</title>
+			<link>https://www.joomlapolis.com/news/18794-community-builder-2-2-bootstrap-4-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18794-community-builder-2-2-bootstrap-4-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201806/cb22conn_640.png" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> can be freely <a href="https://www.joomlapolis.com/downloads/free" rel="alternate">downloaded</a> by all registered members</p>
+<p style="text-align: center;"> </p>
+<p>We just released <a href="https://www.joomlapolis.com/community-builder">Community Builder 2.2</a> with <strong>3 new features</strong> and <strong>3 bug fixes</strong>.</p>
+<p>A huge <strong>THANK YOU</strong> to Kyle (aka krileon) who has been <a href="https://www.joomlapolis.com/blog/kyle/18775-bootstrap-4-and-fontawesome-5">working on this since January</a> and has done an <strong>awesome job</strong> making <strong>Community Builder one of the first Joomla extensions to get Bootstrap 4 support</strong>!</p>
+<p>A detailed changelog is available in the discussion thread. The <strong>main new feature</strong> of CB 2.2 is a <strong>new, awesome, modern, clean looking user interface with improved mobile responsiveness</strong>, using the brand new <strong>Bootstrap 4</strong> that has been selected for <strong>Joomla 4 (to be released later this year)</strong>.</p>
+<p>All our Joomlapolis plugins have also been updated to support CB 2.2 and Bootstrap 4. Paid subscribers can download latest CB 2.2 compatible add-ons from the download area. Once you install or upgrade to CB 2.2, you will need to upgrade all your Joomlapolis add-ons for CB 2.2 clean display compatibility.</p>
+<p><strong>Community Builder 2.2 is a major release</strong> and all users should <strong>first test on a cloned environment</strong> for compatibility issues with their other add-ons and their Joomla template.</p>
+<p>We will be updating our <a href="http://demo.cbdemosites.com/" target="_blank" rel="noopener noreferrer">demo website</a> to CB 2.2 asap, but in the meantime, we have provided above a screenshot of the completely <strong>redesigned Connections management</strong> page.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Wed, 20 Jun 2018 13:40:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Paid Subscriptions (CBSubs) 4.2.1 Maintenance Release</title>
+			<link>https://www.joomlapolis.com/news/18793-cb-paid-dubscriptions-cbsubs-4-2-1-maintenance-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18793-cb-paid-dubscriptions-cbsubs-4-2-1-maintenance-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201806/cbsubs421_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions" rel="alternate">CB Paid Subscriptions (CBSubs) 4.2.1 is here</a> with <strong>3 new features</strong> and <strong>10 bug fixes</strong>!</p>
+<p> </p>
+<p><a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions" rel="alternate">CB Paid Subscriptions (CBSubs GPL) 4.2.1</a> is a <strong>maintenance release.</strong> The last release that supports Bootsrap 3 and it requires Community Builder 2.1.6.</p>
+<p>The next planned CBSubs 4.3 release will support Bootstrap 4 and will be released just after Community Builder 2.2.</p>
+<p><strong>CBSubs 4.2.1</strong> is available in our <a href="https://www.joomlapolis.com/downloads/cb-paid-subscriptions">Downloads</a> section and simply requires an active subscription to <a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions">CBSubs</a>.</p>
+<p>See discussion thread for detailed changelog.</p>]]></description>
+			<category>News</category>
+			<pubDate>Tue, 19 Jun 2018 01:58:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>Community Builder 2.1.6 Maintenance Release</title>
+			<link>https://www.joomlapolis.com/news/18792-community-builder-2-1-6-maintenance-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18792-community-builder-2-1-6-maintenance-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201806/cb216_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> can be freely <a href="https://www.joomlapolis.com/downloads/free" rel="alternate">downloaded</a> by all registered members</p>
+<p style="text-align: center;"> </p>
+<p>We just released <a href="https://www.joomlapolis.com/community-builder">Community Builder 2.1.6 </a>that addresses <strong>some regressions</strong> from the <a href="https://www.joomlapolis.com/news/18791-community-builder-2-1-5-security-and-maintenance-release">Community Builder 2.1.5 Security and Maintenance Release</a>.</p>
+<p>CB 2.1.6 is a <strong>simple one click upgrade</strong> for all CB 2.0+ websites (as always you should first take backup and test your upgrade on a cloned site) and is a <strong>highly recommended update</strong> for all Community Builder websites.</p>
+<p> </p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Fri, 15 Jun 2018 15:31:06 +0000</pubDate>
+		</item>
+		<item>
+			<title>Community Builder 2.1.5 Security and Maintenance Release</title>
+			<link>https://www.joomlapolis.com/news/18791-community-builder-2-1-5-security-and-maintenance-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18791-community-builder-2-1-5-security-and-maintenance-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201806/cb215_640.png" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> can be freely <a href="https://www.joomlapolis.com/downloads/free" rel="alternate">downloaded</a> by all registered members</p>
+<p style="text-align: center;"> </p>
+<p>We just released <a href="https://www.joomlapolis.com/community-builder">Community Builder 2.1.5 </a>that addresses <strong>1 moderate level</strong> XSS security issue (along with additional preventive hardenings), <strong>6 bug fixes</strong> and <strong>2 new features</strong> (see discussion for full changelog).</p>
+<p>CB 2.1.5 is a <strong>simple one click upgrade</strong> for all CB 2.0+ websites (as always you should first take backup and test your upgrade on a cloned site) and is a <strong>highly recommended update</strong> for all Community Builder websites.</p>
+<p>This release paves the way for our Community Builder 2.2 Bootstrap 4 release followed by new releases for all our add-ons.</p>
+<p> </p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Wed, 13 Jun 2018 13:52:23 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla 3.8.8 Security and Bug Fixes release!</title>
+			<link>https://www.joomlapolis.com/news/18790-joomla-3-8-8-security-and-bug-fixes-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18790-joomla-3-8-8-security-and-bug-fixes-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201805/joomla-388-640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5730-joomla-3-8-8-release.html" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.8 is here</a> - a security and bug fixes release!</p>
+<p> </p>
+<p>The Joomla project team has recently released version 3.8.8, a <strong>security and bug fixes release.</strong></p>
+<p><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> 2.1.4 (latest build) and all Joomlapolis <a href="https://www.joomlapolis.com/addons">add-ons</a> work just fine with Joomla 3.8.8. You can see everything in action on our <a href="http://demo.cbdemosites.com/" target="_blank" rel="noopener noreferrer">demo site</a>.</p>
+<p>Joomla 3.8.8 addresses 9 low- and moderate-priority security vulnerabilities / hardenings and fixes over 50 minor bugs.</p>
+<p>This is a highly recommended upgrade for all Joomla 3.x series sites. <strong>As always</strong>, before any Joomla upgrade on your live website, <strong>take a backup</strong> just in case anything goes wrong.</p>
+<p>You can learn more about these security and bug fixes by <a href="https://www.joomla.org/announcements/release-news/5730-joomla-3-8-8-release.html" target="_blank" rel="nofollow noopener noreferrer">reading the Joomla 3.8.8 announcement</a> and, <strong>important</strong>, by visiting the <a href="https://docs.joomla.org/Category:Version_3.8.8_FAQ" target="_blank" rel="noopener noreferrer">Joomla 3.8.8 release issues wiki</a> (to check for known release issues and important notes before you upgrade).</p>
+<p>With new Joomla 3.8.8 installations, a few security- and privacy-related default settings have improved. You may wish to revisit these settings on your existing Joomla sites after upgrading to Joomla 3.8.8, since the Joomla 3.8.8 upgrade of existing sites will not change those settings for your existing site. Here again, visiting the Joomla 3.8.8 release wiki will lead you to the <a href="https://docs.joomla.org/J3.x:Joomla_3.8.8_notes_about_the_changed_default_settings" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.8 notes about the changed default settings</a> page that details which default settings have changed and <strong>how to also change them on your existing sites</strong>.]]></description>
+			<category>News</category>
+			<pubDate>Tue, 29 May 2018 23:04:55 +0000</pubDate>
+		</item>
+		<item>
+			<title>GDPR and what it means for your Community Builder site</title>
+			<link>https://www.joomlapolis.com/news/18789-gdpr-and-what-it-means-for-your-community-builder-site</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18789-gdpr-and-what-it-means-for-your-community-builder-site</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201805/gdpr_640.jpg" alt="" /></p>
+<p style="text-align: center;"><strong>&lt;disclaimer&gt;</strong><span style="color: #0000ff;">This article does not provide legal advise - please consult a lawer.</span><strong>&lt;/disclaimer&gt;</strong></p>
+<p>There are millions of articles currently on the Internet discussing the European Union <strong>G</strong>eneral <strong>D</strong>ata <strong>P</strong>rotection <strong>R</strong>egulation (GPRD) - last time I typed GPRD in Google I got <strong>19,500,000</strong> results. This regulation is planned to go into effect on <strong>May 25th, 2018</strong> (unless a delay is granted).</p>
+<p>As a <strong>Joomla Community Builder</strong> website owner this new regulation most likely affects you - even if your website is not located in a European Union state. If your site has a registration form, you are collecting data from your website visitors and some of those visitors might live in a European Union state - tag your it!</p>
+<p>The simplest way to go about GDPR compliance is to address the following <strong>7 aspects of the requlation</strong>:</p>
+<p style="text-align: center;"><strong>Consent</strong> • <strong>Breach Notification</strong> • <strong>Right to Data Access</strong> • <br /><strong>Right to be forgotten</strong> • <strong>Data Portability</strong> • <strong>Privacy by Design</strong><br /><strong>Potential Data Protection Officers</strong></p>
+<p>You will most likely not need to be concerned with the Data Protection Officers aspect as this pertains to large corporations that handle lots of personal data (but once again remember the disclaimer). Kyle's <a href="https://www.joomlapolis.com/blog/kyle/18788-gdpr-compliance-with-community-builder">GDPR Compliance with Community Builder</a> blog is a great starting point for these 7 points and it also provides some useful reference links. We <strong>strongly suggest</strong> you read it now.</p>
+<p>As you see from Kyle's blog, things are not that complicated as you should keep in mind that:</p>
+<ul>
+<li>The <strong>Community Builder Terms and Conditions field</strong> helps you tackle the <strong>Consent</strong> aspect for your <strong>privacy policy</strong> along with the <strong>registration date / time stamp</strong> recorded during the CB registration process. You can also use the <a href="https://www.joomlapolis.com/addons/cb-profile-update-logger">CB Profile Update Logger</a> as proof of user consent.</li>
+<li>The <strong>Right to be forgotten</strong> aspect can be requested by configuring a simple <strong>Joomla contact form</strong> (to allow your users to request to be deleted from your website) and you can manually delete the user from the <a href="https://www.joomlapolis.com/documentation/277-community-builder/reference-guide/18425-user-management">Community Builder User Management</a> page. Yup, there is no mandate to automate the deletion process, but you can if you want with the <a href="https://www.joomlapolis.com/addons/cb-privacy">CB Privacy</a> <strong>Delete Me field</strong> feature.</li>
+<li>The <strong>Right to Access</strong> aspect can be satisfied with a simple <strong>CB profile</strong> view that allows the user to see all the data you have collected about them. As Kyle states, you can also enhance this by using a <a href="https://www.joomlapolis.com/addons/cb-code-field">CB Code Field</a> field or a <a href="https://www.joomlapolis.com/addons/cb-query-field">CB Query Field</a>.</li>
+<li>If the data you have gathered has been compromized, the <strong>Breach Notification</strong> directive gives you 72 hours to notify the EU authorities. You can also use the CB <a href="https://www.joomlapolis.com/documentation/277-community-builder/reference-guide/18444-user-management-mass-mailer">User Management Mass Mailer</a> functionality to quickly notify your users of the breach.</li>
+<li>The <strong>Privacy by Design</strong> aspect can be addressed using the powerful <strong>Joomla ACL</strong> functionality and if needed with the <a href="https://www.joomlapolis.com/addons/cb-privacy">CB Privacy</a> powered user controlled privacy features.</li>
+<li>The <strong>Data Portability</strong> aspect can be satisfied using <strong>phpmyadmin</strong> to export user specific data from your Joomla database. You can also use CB Juice to export CB related user data and a <strong>planned future release</strong> of CB Privacy will also export user data.</li>
+</ul>
+<p><a href="https://www.joomla.org/announcements/release-news/5731-joomla-3-9-and-joomla-3-10.html">Joomla 3.9 is also planning to be released with a new privacy component</a> that Joomlapolis will be tapping into with a future Joomla 3.9 compatible plugin.</p>
+<p>Perhaps the most important and probably most time-consuming part is to review your <strong>Privacy Policy</strong> and make it clear and easy to understand and GDPR-compliant, like Kyle explains in his blog.</p>
+<p>Key take-aways from this article:</p>
+<ul>
+<li>don't panic</li>
+<li><a href="https://www.joomlapolis.com/blog/kyle/18788-gdpr-compliance-with-community-builder">read Kyle's excellent blog</a></li>
+<li>you don't have to automate everything day one</li>
+<li>you already have the tools to be compliant</li>
+<li>more tools will follow with Joomla 3.9</li>
+</ul>
+<p>We are here to help you!</p>]]></description>
+			<category>News</category>
+			<pubDate>Mon, 21 May 2018 20:29:33 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla 3.8.7 Bug Fixes release!</title>
+			<link>https://www.joomlapolis.com/news/18787-joomla-3-8-7-bug-fixes-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18787-joomla-3-8-7-bug-fixes-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201804/joomla387_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5728-joomla-3-8-7-release.html" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.7 is here</a> - a bug fixes release!</p>
+<p> </p>
+<p>The Joomla project team has released version 3.8.7, a <strong>bug fixes release.</strong></p>
+<p><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> 2.1.4 (latest build) and all Joomlapolis <a href="https://www.joomlapolis.com/addons">add-ons</a> work just fine with Joomla 3.8.7. You can see everything in action on our <a href="http://demo.cbdemosites.com/" target="_blank" rel="noopener noreferrer">demo site</a>.</p>
+<p>This is a maintenance release for all Joomla 3.x series sites. <strong>As always</strong>, before any Joomla upgrade on your live website, <strong>take a backup</strong> just in case anything goes wrong.</p>
+<p>You can learn more about these bug fixes by <a href="https://www.joomla.org/announcements/release-news/5728-joomla-3-8-7-release.html" target="_blank" rel="nofollow noopener noreferrer">reading the Joomla 3.8.7 announcement.</a></p>]]></description>
+			<category>News</category>
+			<pubDate>Thu, 19 Apr 2018 00:21:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla 3.8.6 Security &amp; Bug Fixes release!</title>
+			<link>https://www.joomlapolis.com/news/18784-joomla-3-8-6-security-bug-fixes-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18784-joomla-3-8-6-security-bug-fixes-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5725-joomla-3-8-6-release.html" target="_blank" rel="nofollow noopener noreferrer"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201803/joomla-386_640.jpg" alt="" /></a></p>
+<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5725-joomla-3-8-6-release.html" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.6 is here</a> - a security and bug fixes release!</p>
+<p> </p>
+<p>The Joomla project team has released version 3.8.6, a <strong>security</strong> and <strong>bug fixes release.</strong></p>
+<p><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> 2.1.4 (latest build) and all Joomlapolis <a href="https://www.joomlapolis.com/addons">add-ons</a> work just fine with Joomla 3.8.6.</p>
+<p>This is an important maintenance release for a few Joomla 3.8.5 regression bugs and a recommended upgrade for all Joomla 3.x series sites. <strong>As always</strong>, before any Joomla upgrade on your live website, <strong>take a backup</strong> just in case anything goes wrong.</p>
+<p>The security fix addresses a low level SQLi vulnerability in User Notes and the bug fixes address various Joomla 3.8.5 regressions (session management and cookies improvements), PHP 7.2 compatibility issues and other bugs.</p>
+<p>You can learn more about these bug fixes by <a href="https://www.joomla.org/announcements/release-news/5725-joomla-3-8-6-release.html" target="_blank" rel="nofollow noopener noreferrer">reading the Joomla 3.8.6 announcement.</a></p>]]></description>
+			<category>News</category>
+			<pubDate>Tue, 20 Mar 2018 01:21:45 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Paid Subscriptions 4.2 Released!</title>
+			<link>https://www.joomlapolis.com/news/18783-cb-paid-subscriptions-4-2-released</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18783-cb-paid-subscriptions-4-2-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201803/cbsubs42_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions" rel="alternate">CB Paid Subscriptions (CBSubs) 4.2 is here</a> with <strong>25 new features</strong> and <strong>52 bug fixes</strong>!</p>
+<p> </p>
+<p><a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions" rel="alternate">CB Paid Subscriptions (CBSubs GPL) 4.2</a> is mainly a <strong>features</strong> and <strong>maintenance release</strong> that requires Community Builder 2.1.4.</p>
+<p>All new features and bug fixes are listed in the changelog that is included in the forum thread discussing this article (just scroll to end of article to see changelog and forum discussion start).</p>
+<p>Of the 25 new features, we would like to focus on the following:</p>
+<ul>
+<li>Many Improvements in admin area with<strong> better search </strong>and<strong> batch actions<br /></strong></li>
+<li>Minor improvements in front-end area with<strong> better subscription workflow</strong></li>
+<li>New payment gateway for<strong> Stripe </strong>with<strong> autorecuring payments </strong>and<strong> SEPA support</strong></li>
+<li>Improvements in PayPal Pro with<strong> new Payflow API </strong>and<strong> Paypal Advanced with support for new partners</strong></li>
+<li>Quickpay payment gateway for<strong> new API</strong></li>
+<li>Support for<strong> PHP 7.1 </strong>and<strong> 7.2</strong></li>
+</ul>
+<p>All 25 features and the 52 fixes are listed in the discussion thread below.</p>
+<p>CBSubs 4.2 is available in our <a href="https://www.joomlapolis.com/downloads/cb-paid-subscriptions">Downloads</a> section and simply requires an active subscription to <a href="https://www.joomlapolis.com/addons/cb-paid-subscriptions">CBSubs</a>.</p>]]></description>
+			<category>News</category>
+			<pubDate>Wed, 14 Mar 2018 00:07:50 +0000</pubDate>
+		</item>
+		<item>
+			<title>Community Builder 2.1.4 Released!</title>
+			<link>https://www.joomlapolis.com/news/18782-community-builder-2-1-4-released</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18782-community-builder-2-1-4-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201803/cb214_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> can be freely <a href="https://www.joomlapolis.com/downloads/free" rel="alternate">downloaded</a> by all registered members</p>
+<p style="text-align: center;"> </p>
+<p>We just released <a href="https://www.joomlapolis.com/community-builder">Community Builder 2.1.4 </a>with <strong>17 new features</strong> and <strong>24 bug fixes</strong> (see discussion for full changelog).</p>
+<p>Our favorite CB 2.1.4 features are:</p>
+<ul>
+<li>New time-only field type brings built-in CB field types to 24!</li>
+<li>Install from Web single button update for all out-dated CB plugins lets you quickly update your website with one click.</li>
+<li>Better file-uploads with pre-processing.</li>
+<li>Better handling of touch events on mobile devices.</li>
+</ul>
+<p> </p>
+<p>CB 2.1.4 is a simple one click upgrade for all CB 2.0+ websites (as always you should first take backup and test your upgrade on a cloned site).</p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Wed, 07 Mar 2018 02:07:48 +0000</pubDate>
+		</item>
+		<item>
+			<title>GroupJive 3.2 released!</title>
+			<link>https://www.joomlapolis.com/news/18781-groupjive-3-2-released</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18781-groupjive-3-2-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201802/gj32_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/addons/cb-groupjive">CB GroupJive 3.2</a> is now available for all <strong>paid members</strong></p>
+<p style="text-align: center;"> </p>
+<p><strong>CB GroupJive 3.2 </strong>is here with <strong>14 new features </strong>and <strong>6 bug fixes.</strong></p>
+<p>The main new features are:</p>
+<ul>
+<li>Module category and group include and exclude filtering</li>
+<li>Group URLs can now exclude categories and groups</li>
+<li>Group users display can now be disabled</li>
+<li>Event owners can now attend or not-attend their own events</li>
+<li>Additional module views (my groups, joined groups, invited groups, owned groups)</li>
+<li>Improved activity parsing</li>
+</ul>
+<p>You can see the <strong>full changelog</strong> in the discussion thread and also see it in action on our <a href="http://demo.cbdemosites.com/" rel="alternate">updated demo site</a>.</p>]]></description>
+			<category>News</category>
+			<pubDate>Tue, 27 Feb 2018 00:34:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Gallery 2.2 Released!</title>
+			<link>https://www.joomlapolis.com/news/18780-cb-gallery-2-2-released</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18780-cb-gallery-2-2-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201802/cbgallery22_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/addons/cb-gallery" rel="alternate">CB Gallery 2.2 is here</a> with <strong>12 new features and 14 bug fixes!</strong></p>
+<p> </p>
+<p><a href="https://www.joomlapolis.com/addons/cb-gallery" rel="alternate">CB Gallery 2.2</a> is a <strong>feature rich release</strong> with many great additions.<strong><br /></strong></p>
+<p>Here is a short list of some of the new features:</p>
+<ul>
+<li><strong>Improved performance </strong>with<strong> smart file chunking </strong>and <strong>photo preloading</strong></li>
+<li><strong>Client side resizing support for EXIF orientation</strong></li>
+<li><strong>New content bot usages</strong> for displaying individual inline gallery entries and urls</li>
+<li><strong>Improved integration with CB Activity</strong> for better activity display</li>
+</ul>
+<p>Join the forum discussion to see a full changelog and see the new features in action on <a href="http://demo.cbdemosites.com/" target="_blank" rel="alternate noopener noreferrer">our demo site</a>!</p>
+<p> </p>]]></description>
+			<category>News</category>
+			<pubDate>Wed, 21 Feb 2018 02:32:19 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla 3.8.5 Bug Fixes release!</title>
+			<link>https://www.joomlapolis.com/news/18778-joomla-3-8-5-bug-fixes-release</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18778-joomla-3-8-5-bug-fixes-release</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201802/joomla-385_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomla.org/announcements/release-news/5724-joomla-3-8-5-release.html" target="_blank" rel="nofollow noopener noreferrer">Joomla 3.8.5 is here</a> - a bug fixes release!</p>
+<p> </p>
+<p>The Joomla project team has released version 3.8.5, a <strong>bug fixes release</strong> that primarily addresses fixing regressions which were reported after the 3.8.4 release..</p>
+<p><a href="https://www.joomlapolis.com/community-builder">Community Builder</a> 2.1.3 (latest build) and all Joomlapolis add-ons work just fine with Joomla 3.8.5.</p>
+<p>This is a recommended upgrade for all Joomla 3.x series sites, especially for sites working with Joomla 3.8.4. <strong>As always</strong>, before any Joomla upgrade on your live website, <strong>take a backup</strong> just in case anything goes wrong.</p>
+<p>You can learn more about these bug fixes by <a href="https://www.joomla.org/announcements/release-news/5724-joomla-3-8-5-release.html" target="_blank" rel="nofollow noopener noreferrer">reading the Joomla 3.8.5 announcement.</a></p>]]></description>
+			<category>News</category>
+			<pubDate>Thu, 08 Feb 2018 02:35:45 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Auto Actions 7.2 released!</title>
+			<link>https://www.joomlapolis.com/news/18777-cb-auto-actions-7-2-released</link>
+			<guid isPermaLink="true">https://www.joomlapolis.com/news/18777-cb-auto-actions-7-2-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="https://www.joomlapolis.com/images/jpnewsletter/jpn201801/cbauto72_640.jpg" alt="" /></p>
+<p style="text-align: center;"><a href="https://www.joomlapolis.com/addons/cb-auto-actions">CB Auto Actions</a> 7.2 is here!</p>
+<p> </p>
+<p><strong>CB Auto Actions 7.2</strong> is here with <strong>7 new features</strong> and 2<strong> bug fixes</strong>!</p>
+<p>Now with a <strong>total of 77 built-in system actions</strong> you can kickstart your CB Activity automation feed and of course create your own workflow automations.</p>
+<p>The key new features can be summarized as (see discussion thread for full changelog):</p>
+<ul>
+<li><strong>Performance improvements</strong></li>
+<li><strong>New notification system actions</strong> for CB Activity</li>
+</ul>
+<p>If you are not familiar with what CB Auto Actions is about take a look at our great <a href="https://www.youtube.com/watch?v=v67ShgUtW0I&amp;list=PLp0puRITgC7McQcw0Sli1qfSUQGwmflzi" target="_blank" rel="nofollow noopener noreferrer">CB Auto Actions videos.</a> Even with the video tutorials it is difficult to explain what exactly this tool is about and do it justice.</p>
+<p>We have already updated our <a href="http://demo.cbdemosites.com" target="_blank" rel="noopener noreferrer">demo site</a> with this new release.</p>]]></description>
+			<category>News</category>
+			<pubDate>Tue, 30 Jan 2018 23:47:30 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

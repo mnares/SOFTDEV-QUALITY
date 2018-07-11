@@ -1,0 +1,20 @@
+{% set id = field("id") %}
+{% set classes = classNames('qx-column', grid ) %}
+{% set bg_overlay = field('background_overlay') %}
+
+
+{% if renderer %}
+  <div id="{{ id }}" class="{{ classes }}">
+
+    {% if (bg_overlay and ( getOpacity(bg_overlay, 'normal') or getOpacity(bg_overlay, 'hover') ) ) %}
+      {% set overlayClass = "qx-background-overlay " ~ id ~ "-background-overlay" %}
+      <div class="{{ overlayClass }}"></div>
+    {% endif %}
+    
+    <div class="qx-col-wrap">
+      <div class="qx-element-wrap">
+        {{ renderer.render( node['children'], null, 'frontend' ) | raw  }}
+      </div>
+    </div>
+  </div>
+{% endif %}

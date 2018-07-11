@@ -1,0 +1,20 @@
+{% set id = field('id') %}
+{% set classes = classNames('qx-row', field('v_align').value ? field('v_align').value : "", 
+  {
+    'qx-no-gutters' : (field('columns_gap') == 'no-gutters')
+  })
+%}
+{% set rowId = "id='" ~ id ~ "'" %}
+{% set rowClasses = "class='" ~ classes ~ "'" %}
+{% set bg_overlay = field('background_overlay') %}
+
+{# dynamic tag #}
+{{ "<" ~ field("html_tag") ~ " " ~ rowId ~ " " ~ rowClasses ~ " >"}}
+  
+  {% if (bg_overlay and ( getOpacity(bg_overlay, 'normal') or getOpacity(bg_overlay, 'hover') ) ) %}
+    {% set overlayClass = "qx-background-overlay " ~ id ~ "-background-overlay" %}
+    <div class="{{ overlayClass }}"></div>
+  {% endif %}
+
+  {{ renderer.render( node['children'], null, 'frontend' ) | raw}}
+{{ "</" ~ field("html_tag") ~ ">"}}

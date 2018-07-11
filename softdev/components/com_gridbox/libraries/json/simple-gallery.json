@@ -1,0 +1,27 @@
+{
+    "desktop" : {
+        "view":{
+            "height": 250
+        },
+        "count": 4,
+        "gutter" : true,
+        "margin" : {
+            "bottom" : "25",
+            "top" : "25"
+        },
+        "disable" : "0"
+    },
+    "tablet" : {
+        "disable" : "0"
+    },
+    "phone" : {
+        "disable" : "0"
+    },
+    "lightbox" : {
+        "enable" : true,
+        "color" : "@overlay"
+    },
+    "type" : "simple-gallery",
+    "access" : 1,
+    "suffix" : ""
+}

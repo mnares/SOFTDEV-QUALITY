@@ -1,0 +1,39 @@
+{% set id = field('id') %}
+
+var background = {{ field("background") | json_encode() }}
+
+if( !_.isEmpty(background) ) {
+  if( background.state.normal.type == "video" ) {
+    if( ! jQuery("script#backgroundjs").length ) {
+      var inlineScript = document.createElement("script");
+
+      inlineScript.src = "libraries/quix/assets/js/background.js";
+      inlineScript.id = "backgroundjs"
+      document.head.appendChild(inlineScript);
+
+      var link = document.createElement('link');
+      link.href = "libraries/quix/assets/css/background.css";
+
+      document.head.appendChild(link);
+
+      setTimeout(function() {
+        jQuery(".qx-background-video-container").background({
+          source: {
+            mp4: background.state.normal.properties.url.url
+
+            {# mp4: FILE_MANAGER_ROOT_URL + background.state.normal.properties.src #}
+          }
+        });
+      }, 300)
+    } else {
+      jQuery(".qx-background-video-container").background({
+        source: {
+          mp4: background.state.normal.properties.url.url
+
+          {# mp4: FILE_MANAGER_ROOT_URL + background.state.normal.properties.src #}
+        }
+      });
+    }
+  }
+}
+

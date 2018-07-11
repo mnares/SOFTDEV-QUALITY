@@ -1,0 +1,15 @@
+{% set id = field('id') %}
+{% set tag = field('html_tag') %}
+{% set link = field('link') %}
+
+{% 
+set classes = classNames('qx-element qx-element-heading',{
+    'qx-desktop-disabled': ( node.visibility.lg ? false : true),
+    'qx-tablet-disabled': ( node.visibility.md ? false : true),
+    'qx-mobile-disabled': ( node.visibility.sm ? false : true)
+  })
+%}
+
+<div id="{{ id }}" class="{{ classes }}">
+  {{ field('title') | wrap(tag) | link(link) }}
+</div>

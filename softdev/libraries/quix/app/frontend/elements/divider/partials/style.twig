@@ -1,0 +1,22 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          seperator = id + " .qx-divider-separator";
+
+// Border 
+elm.css( seperator, 'border-top-style', {{ field('style') | json_encode() }});
+elm.css( seperator, 'border-top-width', {{ field('weight') | json_encode() }} + 'px');
+elm.css( seperator, 'border-color', {{ field('color') | json_encode() }});
+elm.css( seperator, 'display', 'inline-block');
+elm.width( seperator, {{ field('width') | json_encode() }}, '%' );
+
+// Gap 
+elm.responsiveCss(id, {{ field('gap') | json_encode() }}, 'padding-top', 'px')
+elm.responsiveCss(id, {{ field('gap') | json_encode() }}, 'padding-bottom', 'px')
+
+// Alignment
+elm.alignment(id, {{ field('alignment') | json_encode() }});
+
+
+elm.load(id)

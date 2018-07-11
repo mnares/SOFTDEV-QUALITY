@@ -1,0 +1,68 @@
+.header .ba-sm-pt-12,
+.ba-sm-pt-12 {
+    width: 100%;
+}
+
+.header .ba-sm-pt-11,
+.ba-sm-pt-11 {
+    width: 91.66666667%;
+}
+
+.header .ba-sm-pt-10,
+.ba-sm-pt-10 {
+    width: 83.33333333%;
+}
+
+.header .ba-sm-pt-9,
+.ba-sm-pt-9 {
+    width: 75%;
+}
+
+.header .ba-sm-pt-8,
+.ba-sm-pt-8 {
+    width: 66.66666667%;
+}
+
+.header .ba-sm-pt-7,
+.ba-sm-pt-7 {
+    width: 58.33333333%;
+}
+
+.header .ba-sm-pt-6,
+.ba-sm-pt-6 {
+    width: 50%;
+}
+
+.header .ba-sm-pt-5,
+.ba-sm-pt-5 {
+    width: 41.66666667%;
+}
+
+.header .ba-sm-pt-4,
+.ba-sm-pt-4 {
+    width: 33.33333333%;
+}
+
+.header .ba-sm-pt-3,
+.ba-sm-pt-3 {
+    width: 25%;
+}
+
+.header .ba-sm-pt-2,    
+.ba-sm-pt-2 {
+    width: 16.66666667%;
+}
+
+.header .ba-sm-pt-1,
+.ba-sm-pt-1 {
+    width: 8.33333333%;
+} 
+
+.ba-video-background video,
+.ba-video-background iframe {
+    left: 0;
+    min-height: 100% !important;
+    top: 0;
+    transform: translateX(-50%)translateX(50vw);
+    width: calc(200vh/.5624);
+}

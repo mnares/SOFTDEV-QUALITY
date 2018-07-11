@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS `#__gridbox_pages`;
+DROP TABLE IF EXISTS `#__gridbox_fonts`;
+DROP TABLE IF EXISTS `#__gridbox_plugins`;
+DROP TABLE IF EXISTS `#__gridbox_library`;
+DROP TABLE IF EXISTS `#__gridbox_categories`;
+DROP TABLE IF EXISTS `#__gridbox_tags`;
+DROP TABLE IF EXISTS `#__gridbox_tags_map`;
+DROP TABLE IF EXISTS `#__gridbox_api`;
+DROP TABLE IF EXISTS `#__gridbox_app`;
+DROP TABLE IF EXISTS `#__gridbox_website`;
+DROP TABLE IF EXISTS `#__gridbox_star_ratings`;
+DROP TABLE IF EXISTS `#__gridbox_star_ratings_users`;
+DROP TABLE IF EXISTS `#__gridbox_page_blocks`;
+DROP TABLE IF EXISTS `#__gridbox_filter_state`;
+DROP TABLE IF EXISTS `#__gridbox_instagram`;
+DROP TABLE IF EXISTS `#__gridbox_system_pages`;

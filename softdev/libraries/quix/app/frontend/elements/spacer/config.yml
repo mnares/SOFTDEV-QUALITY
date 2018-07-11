@@ -1,0 +1,15 @@
+name: Spacer
+slug: spacer
+groups: general
+form:
+  general:
+    - name : spacer_fields_group
+      label: Spacer
+      type: fields-group
+      status: open
+      schema:
+        - name: space
+          type: slider
+          min: 10
+          max: 500
+   

@@ -1,0 +1,56 @@
+{% set id = field('id') %}
+{% set layout = node.form.general.layout_fields_group %}
+{% set container = field('container_type') %}
+{% set bg_overlay = field('background_overlay') %}
+
+{% 
+  set classes = classNames('qx-section',{
+    'qx-desktop-disabled': ( node.visibility.lg ? false : true),
+    'qx-tablet-disabled': ( node.visibility.md ? false : true),
+    'qx-mobile-disabled': ( node.visibility.sm ? false : true),
+    'qx-section--stretch' : field('section_stretch'),
+    'qx-section-height-full' : (field('height') == 'full'),
+    'qx-section-height-custom' : (field('height') == 'custom'),
+    'qx-section-has-divider' : ( field('top_divider_style') != 'none' ) or ( field('bottom_divider_style') != 'none' )
+  })
+%}
+
+{% 
+  set containerClass = classNames({
+    'qx-container' : container == 'boxed',
+    'qx-container-fluid' : container == 'fluid',
+  }, field('v_align').value)
+%}
+
+{% set sectionID = "id='" ~ id ~ "'" %}
+{% set sectionClasses = "class='" ~ classes ~ "'" %}
+
+ {# dynamic tag #}
+ {{ "<" ~ field("html_tag") ~ " " ~ sectionID ~ " " ~ sectionClasses ~ " >"}}
+
+  {% if (bg_overlay and ( getOpacity(bg_overlay, 'normal') or getOpacity(bg_overlay, 'hover') ) ) %}
+    {% set overlayClass = "qx-background-overlay " ~ id ~ "-background-overlay" %}
+    <div class="{{ overlayClass }}"></div>
+  {% endif %}
+
+  {% if(field('top_divider_style') != 'none') %}
+     {% set topDividerFile = "/assets/images/shapes/" ~ field('top_divider_style') ~ ".svg"  %}
+    <div class="qx-shape qx-shape-top">
+      {{ raw( topDividerFile ) }}
+    </div>
+  {% endif %}
+  
+  {% if(field('bottom_divider_style') != 'none') %}
+     {% set bottomDividerFile = "/assets/images/shapes/" ~ field('bottom_divider_style') ~ ".svg"  %}
+    <div class="qx-shape qx-shape-bottom">
+      {{ raw( bottomDividerFile ) }}
+    </div>
+  {% endif %}
+
+  <div class="{{ containerClass  }}">
+      <div class="qx-rows">
+          {{ renderer.render( node['children'], null, 'frontend' ) | raw  }}
+      </div>
+  </div>
+
+{{ "</" ~ field("html_tag") ~ ">"}}

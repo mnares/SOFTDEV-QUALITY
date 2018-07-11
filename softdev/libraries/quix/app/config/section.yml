@@ -1,0 +1,7 @@
+advanced:
+  - name: identifier
+    type: fields-group
+    schema:
+      - name: label
+      - name: id
+      - name: class

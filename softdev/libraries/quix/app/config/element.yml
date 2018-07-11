@@ -1,0 +1,48 @@
+advanced:
+  - name    : spacing_fields_group
+    label   : Element Style
+    type    : fields-group
+    status  : open
+    schema  :
+      - name  : margin
+        type  : dimensions
+
+      - name  : padding
+        type  : dimensions
+      
+      - name  : zindex
+        label : Z-Index
+        type  : slider
+        value : 0
+        min   : 0
+        max   : 999
+        responsive : false
+        
+  - name : background_fields_group
+    label: Background
+    type: fields-group
+    schema:
+      - name: background
+        type: background
+
+  - name: custom_css_group
+    label: Custom CSS
+    type: fields-group
+    schema:
+      - name: custom_css
+        label: Css Code
+        type: code
+        
+  - name: identifier
+    type: fields-group
+    schema:
+      - name : label
+        type: note
+        
+      - name: id
+        label: Css ID
+        help: Add your custom ID WITHOUT the '#'. eg - my-id
+
+      - name: class
+        label: Css Classs
+        help: Add your custom classes WITHOUT the dot and seperate by space. eg - first-class another-class

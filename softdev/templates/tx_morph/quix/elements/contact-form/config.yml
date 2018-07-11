@@ -1,0 +1,8 @@
+name: Contact Form
+slug: contact-form
+groups: [content, interactive] 
+form:
+  style:
+    - name: font
+      type: typography
+    

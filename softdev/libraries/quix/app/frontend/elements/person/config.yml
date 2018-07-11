@@ -1,0 +1,197 @@
+name: Person
+slug: person
+groups: general
+form:
+  general:
+    - name : person_fg_image
+      label: Image
+      type: fields-group
+      status: open
+      schema:
+        - name: image
+          type: media
+          value: 'libraries/quix/assets/images/placeholder.png'
+
+        - name: alt_text
+          label : Alt Text
+          type: text
+          help : Google focuses on alt text when trying to understand what an image is about. So it's valuable for SEO, in addition to being useful for users.
+          depends:
+            image: '*'
+
+        - name: caption
+          type: text
+          depends:
+            image: '*'
+
+        - name: link
+          label: Link
+          type: link
+
+    - name : person_fg_details
+      label: Details
+      type: fields-group
+      schema:
+        - name: name
+          label: Name
+          type: text
+          value: Jenny Doe
+
+        - name: position
+          label: Position
+          type: text
+          value: Designer
+
+        - name: description
+          label: Description
+          type: editor
+          value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+        - name: html_tag
+          label: Name HTML Tag
+          type: select
+          value: h3
+          options:
+            h1: H1
+            h2: H2
+            h3: H3
+            h4: H4
+            h5: H5
+            h6: H6
+
+  styles:
+    - name: person_fg_image_style
+      label: Image
+      type: fields-group
+      status: open
+      schema:
+        - name : image_alignment
+          label: Position
+          type : choose
+          responsive: false
+          options:
+            left :
+              label: Left
+              icon : qxicon-arrow-to-left
+            center :
+              label : Top
+              icon : qxicon-arrow-to-top
+            right :
+              label : Right
+              icon : qxicon-arrow-to-right
+
+        - name  : image_spacing
+          label : Spacing
+          type: slider
+          max : 100
+          value:
+            desktop : 15
+            tablet : 15
+            phone : 10
+
+        - name: img_border_radius
+          label : Border Radius
+          type: dimensions
+    
+    - name: person_fg_content
+      label: Content
+      type: fields-group
+      schema:
+        - name : content_alignment
+          label: Alignment
+          type : choose
+          options:
+            left :
+              label: Left
+              icon : qxicon-align-left
+            center :
+              label : Center
+              icon : qxicon-align-center
+            right :
+              label : Right
+              icon : qxicon-align-right
+
+        - name : content_v_align
+          label: Position
+          type : choose
+          responsive: false
+          options:
+            qx-align-items-start :
+              label: Top
+              icon : qxicon-arrow-to-top
+            qx-align-items-center :
+              label : Middle
+              icon : qxicon-minus
+            qx-align-items-end :
+              label : Bottom
+              icon : qxicon-arrow-to-bottom
+
+        - name: content_padding
+          label: Padding
+          type: dimensions
+          value:
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            tablet:
+              top: 0
+              bottom: 0
+              left: 0
+              right: 0
+            phone:
+              top: 0
+              bottom: 0
+              left: 0
+              right: 0
+              
+    - name: person_fg_name_style
+      label: Name
+      type: fields-group
+      schema:
+        - name: name_spacing
+          label : Spacing
+          type: slider
+          max : 100
+          value: 10
+
+        - name: name_color
+          label: Color
+          type: color
+
+        - name: name_font
+          label: Font
+          type: typography
+
+    - name: person_fg_position_style
+      label: Position
+      type: fields-group
+      schema:
+        - name: position_spacing
+          label: Spacing
+          type: slider
+          responsive: true
+          max : 100
+          value: 10
+
+        - name: position_color
+          label: Color
+          type: color
+
+        - name: position_font
+          label: Font
+          type: typography
+
+    - name: person_fg_description_style
+      label: Description
+      type: fields-group
+      schema:
+        - name: description_color
+          label: Color
+          type: color
+
+        - name: description_font
+          label: Font
+          type: typography
+
+

@@ -1,0 +1,43 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          css = "";
+
+// Background > .qx-btn 
+elm.background (id + ' .qx-btn', {{ field("btn_background") | json_encode() }})
+
+// Text Color
+elm.css( id + ' .qx-btn', 'color', {{ field('text_color') | json_encode() }});
+// Hover Text color
+elm.css( id + ' .qx-btn:hover', 'color', {{ field('hover_text_color') | json_encode() }});
+
+// typography
+elm.typography(id + ' *', {{ field('font') | json_encode() }});
+
+// Alignment
+elm.alignment(id, {{ field('alignment') | json_encode() }});
+
+// padding 
+elm.padding(id + ' .qx-btn', {{ field("btn_padding") | json_encode() }})
+
+// -----------------------------
+// Border 
+// -----------------------------
+// Border width > .qx-btn 
+elm.borderWidth( id + ' .qx-btn', {{ field('btn_border_width') | json_encode() }} );
+
+// Border style > .qx-btn 
+elm.css( id + ' .qx-btn', 'border-style', {{ field('btn_border_type') | json_encode() }} );
+
+// Border color > .qx-btn 
+elm.css( id + ' .qx-btn', 'border-color', {{ field('btn_border_color') | json_encode() }} );
+elm.css( id + ' .qx-btn:hover', 'border-color', {{ field('btn_hover_border_color') | json_encode() }} );
+
+// Border radius > .qx-btn 
+elm.borderRadius( id + ' .qx-btn', {{ field('btn_border_radius') | json_encode() }} );
+// -----------------------------
+// Border 
+// -----------------------------
+
+elm.load(id) 

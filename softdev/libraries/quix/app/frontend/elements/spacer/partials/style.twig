@@ -1,0 +1,9 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          seperator = id + " .qx-divider-separator";
+
+elm.height(id, {{ field('space') | json_encode() }});
+
+elm.load(id)

@@ -1,0 +1,62 @@
+{% include 'global.twig' %}
+
+var elm = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          img = {{ field("image") | json_encode() }} 
+          img_alignment = {{ field("image_alignment").value | json_encode() }},
+          wrapperSelector = id + " .qx-element-blurb__wrapper",
+          imgSelector = id + " .qx-element-blurb__media",
+          contentSelector = id + " .qx-element-blurb__content",
+          titleSelector = id + " .qx-element-blurb__title",
+          bodySelector = id + " .qx-element-blurb__body";
+
+// -----------------------------
+// Media 
+// -----------------------------
+if( img_alignment == 'left'){
+  elm.responsiveCss(imgSelector, {{ field("image_spacing") | json_encode() }}, 'margin-right', 'px');
+  elm.phone(imgSelector, 'margin-bottom:' + {{ field("image_spacing").phone | json_encode() }} + 'px');
+} else if( img_alignment == 'right'){
+  elm.responsiveCss(imgSelector, {{ field("image_spacing") | json_encode() }}, 'margin-left', 'px');
+  elm.phone(imgSelector, 'margin-bottom:' + {{ field("image_spacing").phone | json_encode() }} + 'px');
+} else{
+  elm.responsiveCss(imgSelector, {{ field("image_spacing") | json_encode() }}, 'margin-bottom', 'px');
+}
+// svg
+if( img.media ) {
+  if( img.media.type == "svg" ) {
+    elm.css( imgSelector + " path", "fill", img.media.properties.color )
+    elm.css( imgSelector + " svg", 'width', img.media.properties.size + "px")
+    elm.css( imgSelector + " svg", 'height', img.media.properties.size + "px")
+  }
+}
+// Width 
+elm.width(imgSelector, {{ field("image_width") | json_encode() }}, '%')
+
+// -----------------------------
+// Title
+// -----------------------------
+// Spacing 
+elm.responsiveCss(titleSelector, {{ field("title_spacing") | json_encode() }}, 'margin-bottom', 'px');
+// Color
+elm.css( titleSelector + ' *', 'color', {{ field('title_color') | json_encode() }});
+// Typography
+elm.typography( titleSelector + ' *', {{ field('title_font') | json_encode() }});
+
+
+// -----------------------------
+// Body
+// -----------------------------
+// Color
+elm.css( bodySelector + ',' + bodySelector + ' *', 'color', {{ field('body_color') | json_encode() }});
+// Typography - Multiple selectors
+elm.typography( bodySelector + ',' + bodySelector + ' *', {{ field('body_font') | json_encode() }});
+
+
+// -----------------------------
+// Content
+// -----------------------------
+// Alignment
+elm.alignment(wrapperSelector, {{ field('content_alignment') | json_encode() }});
+// Padding
+elm.padding(contentSelector, {{ field('content_padding') | json_encode() }})

@@ -1,0 +1,95 @@
+name: Gallery
+slug: gallery
+groups: [content, interactive]
+
+form:
+  general:
+    - name: galleries
+      type: group-repeater
+      schema: 
+        - name: title
+          type: text
+          value: Gallery Item
+
+        - name: image
+          type: file-manager
+
+        - name: description
+          type: editor
+        
+        - name: link
+
+        - name: link_new_window
+          type: switch
+          label: Open In New Window
+
+      value:
+        - title: Gallery Item
+
+    - name: columns
+      type: select 
+      value: 3
+      options:
+        12 : 1 Column
+        6 : 2 Columns
+        4 : 3 Columns
+        3 : 4 Columns
+        2 : 6 Columns
+        1 : 12 Columns
+
+    - name: title_enabled
+      type: switch
+      label: Show Title
+
+    - name: description_enabled
+      type: switch
+      label: Show Description
+
+  styles:
+    - name: title_style
+      type: divider
+
+    - name: title_font
+      type: typography
+      label: Title Font
+
+    - name: title_color
+      type: color
+      label: Title Color
+
+    - name: title_margin
+      type: margin
+      label: Title Margin
+
+    - name: description_style
+      type: divider
+
+    - name: description_font
+      type: typography
+      label: Description Font
+
+    - name: description_color
+      type: color
+      label: Description Color
+
+    - name: global_style
+      type: divider
+
+    - name: lightbox_enabled
+      type: switch
+      value: true
+      label: Enable Lightbox
+
+    - name: content_position
+      type: select
+      value: bottom 
+      options: 
+        bottom: Bottom of Image 
+        overlay: Overlay 
+
+    - name: margin
+      type: margin
+
+    - name: padding
+      type: padding
+

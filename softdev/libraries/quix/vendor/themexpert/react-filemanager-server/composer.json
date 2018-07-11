@@ -1,0 +1,28 @@
+{
+  "name": "themexpert/react-filemanager-server",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Server side library for React File Manager",
+  "type": "library",
+  "keywords": [
+    "file",
+    "manager",
+    "react",
+    "reactjs",
+    "php",
+    "image",
+    "processing"
+  ],
+  "homepage": "https://github.com/themexpert/react-filemanager-client.git",
+  "authors": [
+    {
+      "name": "Rocky",
+      "email": "wpkpda@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FileManager\\": "src/"
+    }
+  }
+}

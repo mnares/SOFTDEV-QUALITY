@@ -1,0 +1,23 @@
+{% include 'global.twig' %}
+
+var row = Object.assign({}, Assets),
+          id = "#{{ field("id") }}",
+          css = "",
+          backgroundOverlay = ".{{ field('id') }}-background-overlay";
+
+// Custom height
+var heightType = {{ field('height') | json_encode() }}
+
+if( heightType == 'custom' ){
+  row.minHeight(id, {{ field('custom_height') | json_encode() }})
+}
+
+// background overlay
+style.background (backgroundOverlay, {{ field("background_overlay") | json_encode() }}, id)
+
+row.load(id);
+
+// loading children ( COLUMN ) style...
+{% if renderer %}
+  {{ renderer.render( node['children'], null, 'frontend' ) | raw  }}
+{% endif %}

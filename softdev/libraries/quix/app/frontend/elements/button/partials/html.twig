@@ -1,0 +1,18 @@
+{% set id = field('id') %}
+{% set text = field('text') %}
+{% set link = field('link') %}
+{% set type = field('type') %}
+{% set outline = field('outline') %}
+{% set class = 'qx-btn qx-btn-' ~ type %}
+
+{% if outline %}
+  {% set class = 'qx-btn qx-btn-outline-' ~ type %}
+{% endif %}
+
+{% if field('full_width') %}
+  {% set class = class ~ ' qx-btn-block' %}
+{% endif %}
+
+<div id="{{ id }}" class="qx-element qx-element-button">
+  {{ field('text') | link(link, class) }}
+</div>

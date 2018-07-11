@@ -1,0 +1,120 @@
+body:not(.show-hidden-elements) .ba-hidden-sm {
+    display: none !important;
+}   
+
+body:not(.show-hidden-elements) .ba-hidden-sm:first-child  + .ba-column-resizer + .ba-grid-column-wrapper {
+    margin-left: 0 !important;
+} 
+
+body {
+    word-break: break-word;
+}    
+
+.ba-item-post-navigation .ba-blog-post {
+    margin: 0 !important;
+    width: calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+}
+
+.ba-item-post-navigation .ba-blog-posts-wrapper {
+    display: block;
+}
+
+.ba-item-post-navigation .ba-blog-posts-wrapper > i {
+    vertical-align: middle;
+}
+
+.control-group .control-label {
+    width: 100%!important;
+}
+
+.form-horizontal .controls {
+    margin-left: 0 !important;
+}  
+
+.remind .control-group .control-label,
+.reset .control-group .control-label,
+.login .control-group .control-label {
+    text-align: center;
+}
+
+.header .ba-sm-la-12,   
+.ba-sm-la-12 {
+    width: 100%;
+}
+
+.header .ba-sm-la-11,
+.ba-sm-la-11 {
+    width: 91.66666667%;
+}
+
+.header .ba-sm-la-10,
+.ba-sm-la-10 {
+    width: 83.33333333%;
+}
+
+.header .ba-sm-la-9,
+.ba-sm-la-9 {
+    width: 75%;
+}
+
+.header .ba-sm-la-8,
+.ba-sm-la-8 {
+    width: 66.66666667%;
+}
+
+.header .ba-sm-la-7,
+.ba-sm-la-7 {
+    width: 58.33333333%;
+}
+
+.header .ba-sm-la-6,
+.ba-sm-la-6 {
+    width: 50%;
+}
+
+.header .ba-sm-la-5,
+.ba-sm-la-5 {
+    width: 41.66666667%;
+}
+
+.header .ba-sm-la-4,
+.ba-sm-la-4 {
+    width: 33.33333333%;
+}
+
+.header .ba-sm-la-3,
+.ba-sm-la-3 {
+    width: 25%;
+}
+
+.header .ba-sm-la-2,
+.ba-sm-la-2 {
+    width: 16.66666667%;
+}
+
+.header .ba-sm-la-1,
+.ba-sm-la-1 {
+    width: 8.33333333%;
+}
+
+.ba-video-background video,
+.ba-video-background iframe {
+    height: calc(100vw * .5625);
+    height: -webkit-calc(100vw * .5625);
+    left: calc(0px - ((100vw - 100%)/2));
+    left: -webkit-calc(0px - ((100vw - 100%)/2));
+    position: absolute;
+    top: calc(50% - ((100vw * .5625)/2));
+    top: -webkit-calc(50% - ((100vw * .5625)/2));
+    width: 100vw;
+}
+
+.ba-video-background video,
+.ba-video-background iframe {
+    left: 0;
+    min-height: 100% !important;
+    top: 0;
+    transform: translateX(-50%)translateX(50vw);
+    width: calc(200vh/.5624);
+}

@@ -1,0 +1,158 @@
+name: Morph Button Group
+slug: morph-button-group
+groups: Morph
+form:
+  general:
+    - name: buttons
+      type: group-repeater
+      schema:
+        - name: button_pre_text
+          type: text
+          label: Button Pre Text
+
+        - name: button
+          type: link
+
+        - name: icon
+          type: icon
+
+        - name: icon_placement
+          type: select
+          value: left
+          options:
+            left: Left
+            right: Right
+
+        - name: style
+          type: select
+          value: qx-btn-default
+          options:
+            qx-btn-default: Default
+            qx-btn-primary: Primary
+            qx-btn-success: Success
+            qx-btn-info: Info
+            qx-btn-warning: Warning
+            qx-btn-danger: Danger
+            qx-btn-link: Link
+
+        - name: custom_style
+          type: switch
+          label: Custom Style 
+
+        - name: text_color
+          type: color
+          label: Text Color
+          depends:
+            custom_style: true
+
+        - name: bg_color
+          type: color
+          label: Background Color
+          depends:
+            custom_style: true
+
+        - name: bg_color_hover
+          type: color
+          label: Hover Background Color
+          depends:
+            custom_style: true
+
+        - name: text_color_hover
+          type: color
+          label: Hover Text Color
+          depends:
+            custom_style: true
+
+        - name: border
+          type: switch
+          label: Border Styling
+          depends:
+            custom_style: true
+
+        - name: border_width
+          type: slider
+          label: Border Width
+          value: 2
+          depends:
+            border: true
+
+        - name: border_radius
+          type: slider
+          label: Border Radius
+          value: 3
+          depends:
+            border: true
+
+        - name: border_style
+          type: select
+          value: solid
+          depends:
+            border: true
+          options:
+            solid: Solid
+            dotted: Dotted
+            dashed: Dashed
+            double: Double
+
+        - name: border_color
+          type: color
+          label: Border Color
+          depends:
+            border: true
+
+        - name: button_icon_color
+          type: color
+          label: Icon Color
+          depends:
+            custom_style: true
+
+        - name: button_icon_color_hover
+          type: color
+          label: Icon Hover Color
+          depends:
+            custom_style: true
+
+        - name: padding
+          type: padding
+          depends:
+            custom_style: true
+
+      value:
+        - button:
+            text : Button 1
+            url : 
+            target:
+  styles:
+    - name: alignment
+      type: select
+      image: true
+      responsive: true
+      value: left
+      options:
+        left: Left
+        center: Center
+        right: Right
+
+    - name: font
+      type: typography
+
+    - name: pre_font
+      label: Pre Text Font
+      type: typography
+
+    - name: icon_font_size
+      type: slider
+      lable: Icon Font Size
+      value : 35
+
+    - name: icon_margin
+      type: margin
+      label: Icon Margin
+
+    - name: button_spacing
+      type: slider
+      value: 10
+      help: Define spacing between button
+
+    - name: margin
+      type: margin

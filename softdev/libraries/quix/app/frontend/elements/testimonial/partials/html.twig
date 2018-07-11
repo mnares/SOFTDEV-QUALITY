@@ -1,0 +1,43 @@
+{% set id = field("id") %}
+{% set name = field('name') %}
+{% set content = field('content') %}
+{% set position = field('position') %}
+{% set src = field('image') %}
+{% set alt_text = field('alt_text') %}
+{% set image_spacing = field('image_spacing') %}
+{% set img_alignment = field('image_alignment').value %}
+{% set content_alignment = field('alignment').value %}
+{% set wrapperClasses = classNames('qx-element-testimonial__wrapper', {
+	'qx-d-inline-flex  qx-flex-column-reverse' : (img_alignment == 'bottom'),
+	'qx-d-inline-flex  qx-align-items-center qx-flex-row-reverse' : (img_alignment == 'right'),
+	'qx-d-inline-flex  qx-align-items-center' : (img_alignment == 'left')
+}) %}
+
+<div id="{{ id }}" class="qx-element qx-element-testimonial-v2">
+	{% if content %}
+		<p class="qx-testimonial__quote">{{ content }}</p>
+	{% endif %}
+	
+	<div class="{{ wrapperClasses }}">
+    <div class="qx-element-testimonial__media qx-d-inline-block">
+		  {% if src.media %}
+        {% if src.media.type == "svg" %}
+          {{ src.media.svg }}
+        {% else %}
+          {{ image( src.media.image, alt_text)  }}
+        {% endif %}  
+	      {% elseif src.url %}
+          {{ image(src.url, alt_text) }}
+      {% endif %} 
+    </div>
+
+    <div class="qx-testimonial__author">
+    	{% if name %}
+    		<div class="qx-testimonial__name">{{ name }}</div>
+    	{% endif %}
+    	{% if position %}
+      	<div class="qx-testimonial__position">{{ position }}</div>
+    	{% endif %}
+    </div>
+	</div>
+</div>

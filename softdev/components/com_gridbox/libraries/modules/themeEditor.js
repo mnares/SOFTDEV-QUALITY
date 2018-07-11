@@ -1,0 +1,187 @@
+/**
+* @package   Gridbox
+* @author    Balbooa http://www.balbooa.com/
+* @copyright Copyright @ Balbooa
+* @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
+*/
+
+app.themeRules = function(){
+    var obj = {
+        callback : 'themeRules',
+        selector : 'body'
+    }
+    app.editor.app.listenMessage(obj);
+}
+
+app.themeEditor = function(){
+    app.editor.app.edit = 'body';
+    app.edit = app.editor.app.theme;
+    app.selector = 'body';
+    if (!app.edit.desktop.video) {
+        app.edit.desktop.video = $g.extend(true, {}, app.edit.desktop.background.video);
+    }
+    var value = $g('#theme-settings-dialog .typography-select input[type="hidden"]').val();
+    app.setTypography($g('#theme-settings-dialog .typography-options'), value);
+    $g('#theme-settings-dialog [data-group="padding"]').each(function(){
+        var option = this.dataset.option;
+        value = getValue('padding', option);
+        this.value = value;
+    });
+    $g('#theme-settings-dialog .section-access-select input[type="hidden"]').val(app.edit.access);
+    var name = $g('#theme-settings-dialog .section-access-select li[data-value="'+app.edit.access+'"]').text();
+    $g('#theme-settings-dialog .section-access-select input[readonly]').val($g.trim(name));
+    $g('#theme-settings-dialog .class-suffix').val(app.edit.suffix);
+    value = getValue('background', 'color');
+    updateInput($g('#theme-background-options input[data-option="color"][data-group="background"]'), value);
+    value = getValue('overlay', 'color');
+    updateInput($g('#theme-background-options input[data-option="color"][data-group="overlay"]'), value);
+    $g('#theme-background-options input[data-option="image"]').val(getValue('background', 'image', 'image'));
+    $g('#theme-background-options [data-option="attachment"]').val(getValue('background', 'attachment', 'image'));
+    name = $g('#theme-background-options .attachment li[data-value="'+getValue('background', 'attachment', 'image')+'"]').text();
+    $g('#theme-background-options .attachment input[readonly]').val($g.trim(name));
+    value = getValue('background', 'size', 'image');
+    $g('#theme-background-options .backround-size input[type="hidden"]').val(value);
+    if (value == 'contain' || value == 'initial') {
+        $g('#theme-background-options .contain-size-options').show().addClass('ba-active-options');
+        setTimeout(function(){
+            $g('#theme-background-options .contain-size-options').removeClass('ba-active-options');
+        }, 1);
+    } else {
+        $g('#theme-background-options .contain-size-options').hide();
+    }
+    name = $g('#theme-background-options .backround-size li[data-value="'+value+'"]').text();
+    $g('#theme-background-options .backround-size input[readonly]').val($g.trim(name));
+    value = getValue('background', 'position', 'image');
+    $g('#theme-background-options [data-option="position"]').val(value);
+    name = $g('#theme-background-options .backround-position li[data-value="'+value+'"]').text();
+    $g('#theme-background-options .backround-position input[readonly]').val($g.trim(name));
+    value = getValue('background', 'repeat', 'image');
+    $g('#theme-background-options [data-option="repeat"]').val(value);
+    name = $g('#theme-background-options .backround-repeat li[data-value="'+value+'"]').text();
+    $g('#theme-background-options .backround-repeat input[readonly]').val($g.trim(name));
+    $g('#theme-settings-dialog .video-select [data-option="video-type"]').val(app.edit.desktop.background.video.type);
+    $g('#theme-settings-dialog .video-select').trigger('customAction');
+    $g('#theme-background-options [data-option="id"]').val(app.edit.desktop.background.video.id);
+    $g('#theme-background-options [data-option="start"]').val(app.edit.desktop.background.video.start);
+    if (app.edit.desktop.background.video.mute == 1) {
+        $g('#theme-background-options [data-option="mute"]').prop('checked', true);
+    }
+    $g('#theme-settings-dialog .video-quality [data-option="quality"]').val(app.edit.desktop.background.video.quality);
+    name = $g('#theme-settings-dialog .video-quality li[data-value="'+app.edit.desktop.background.video.quality+'"]').text();
+    $g('#theme-settings-dialog .video-quality [readonly]').val($g.trim(name));
+    name = getValue('background', 'type');
+    if(app.view != 'desktop' && name == 'video') {
+        name = 'color';
+    }
+    $g('#theme-settings-dialog .background-select input[type="hidden"]').val(name);
+    name = $g('#theme-settings-dialog .background-select li[data-value="'+name+'"]').text();
+    $g('#theme-settings-dialog .background-select input[readonly]').val($g.trim(name));
+    backgroundSelectAction($g('#theme-settings-dialog .background-select'), 'themeRules');
+    if (!app.edit.desktop.background.gradient) {
+        app.edit.desktop.background.gradient = {
+            effect : 'linear',
+            angle: '45',
+            color1: '#08aeea',
+            position1: '0',
+            color2: '#2af598',
+            position2: '100'
+        }
+        app.edit.desktop.overlay.type = 'color';
+        app.edit.desktop.overlay.gradient = {
+            effect : 'linear',
+            angle: '225',
+            color1: 'rgba(8, 174, 234, 0.75)',
+            position1: '0',
+            color2: 'rgba(42, 245, 152, 0.75)',
+            position2: '100'
+        }
+    }
+    value = getValue('background', 'effect', 'gradient');
+    $g('#theme-settings-dialog .background-linear-gradient').hide();
+    $g('#theme-settings-dialog .background-'+value+'-gradient').css('display', '');
+    $g('#theme-settings-dialog .gradient-options .gradient-effect-select input[type="hidden"]').val(value);
+    value = $g('#theme-settings-dialog .gradient-options .gradient-effect-select li[data-value="'+value+'"]').text().trim();
+    $g('#theme-settings-dialog .gradient-options .gradient-effect-select input[type="text"]').val(value);
+    value = getValue('overlay', 'effect', 'gradient');
+    $g('#theme-settings-dialog .overlay-linear-gradient').hide();
+    $g('#theme-settings-dialog .overlay-'+value+'-gradient').css('display', '');
+    $g('#theme-settings-dialog .overlay-gradient-options .gradient-effect-select input[type="hidden"]').val(value);
+    value = $g('#theme-settings-dialog .overlay-gradient-options .gradient-effect-select li[data-value="'+value+'"]').text().trim();
+    $g('#theme-settings-dialog .overlay-gradient-options .gradient-effect-select input[type="text"]').val(value);
+    $g('#theme-settings-dialog input[data-subgroup="gradient"][data-group="background"]').each(function(){
+        value = getValue('background', this.dataset.option, 'gradient');
+        if (this.type == 'number') {
+            var range = $g(this).val(value).prev().val(value);
+            setLinearWidth(range);
+        } else {
+            updateInput($g(this), value);
+        }
+    });
+    value = getValue('overlay', 'type');
+    $g('#theme-settings-dialog .overlay-color-options, .overlay-gradient-options').hide();
+    $g('#theme-settings-dialog .overlay-'+value+'-options').css('display', '');
+    $g('#theme-settings-dialog .background-overlay-select input[type="hidden"]').val(value);
+    value = $g('#theme-settings-dialog .background-overlay-select li[data-value="'+value+'"]').text().trim();
+    $g('#theme-settings-dialog .background-overlay-select input[type="text"]').val(value);
+    $g('#theme-settings-dialog input[data-subgroup="gradient"][data-group="overlay"]').each(function(){
+        value = getValue('overlay', this.dataset.option, 'gradient');
+        if (this.type == 'number') {
+            var range = $g(this).val(value).prev().val(value);
+            setLinearWidth(range);
+        } else {
+            updateInput($g(this), value);
+        }
+    });
+    $g('#theme-settings-dialog .ba-settings-item.colors-item[data-variable]').each(function(){
+        $g(this).find('.color-varibles-color-swatch').css('background-color', app.edit.colorVariables[this.dataset.variable].color);
+    });
+    setTimeout(function(){
+        $g('#theme-settings-dialog').modal();
+    }, 150);
+}
+
+if (!app.modules.draggable) {
+    app.loadModule('draggable');
+}
+if (!app.modules.resizable) {
+    app.loadModule('resizable');
+}
+
+$g('#theme-colors-options .colors-wrapper').on('click', '.colors-item[data-variable]', function(){
+    var position = $g(this).position(),
+        rect = $g(this).find('.color-varibles-color-swatch')[0].getBoundingClientRect(),
+        left = rect.left - 285,
+        top = rect.bottom - ((rect.bottom - rect.top) / 2) - 174;
+    if (position.left < 220) {
+        left = rect.right + 10;
+        $g('#color-variables-dialog').addClass('ba-right-position');
+    } else {
+        $g('#color-variables-dialog').removeClass('ba-right-position');
+    }
+    setMinicolorsColor(this.dataset.variable);
+    fontBtn = this;
+    $g('#color-variables-dialog').css({
+        left : left,
+        top : top
+    }).modal().find('.nav-tabs li:last').hide();
+}).on('minicolorsInput', '.colors-item[data-variable]', function(){
+    app.editor.app.theme.colorVariables[this.dataset.variable].color = this.dataset.rgba;
+    $g(this).find('.color-varibles-color-swatch').css('background-color', this.dataset.rgba);
+    $g('#theme-settings-dialog .minicolors-input[data-rgba="'+this.dataset.variable+'"]')
+        .next().find('.minicolors-swatch-color').css('background-color', this.dataset.rgba);
+    app.sectionRules();
+    app.themeRules();
+    app.editor.$g('.ba-item-progress-pie').each(function(){
+        var obj = app.editor.app.items[this.id],
+            canvas = app.editor.$g('#'+this.id).find('canvas')[0],
+            context = canvas.getContext('2d');
+        canvas.width = obj.desktop.width;
+        canvas.height = canvas.width;
+        context.lineCap = 'round';
+        app.editor.drawPieLine(obj.target * 3.6, canvas, context, this);
+    });
+});
+
+app.modules.themeEditor = true;
+app.themeEditor();
+app.loading.themeEditor = false;
